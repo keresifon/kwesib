@@ -14,7 +14,7 @@ const Header = () => (
     <NavDropdown title="Commissioned" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Baby, Birthdays, Weddings</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">She Reads</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Brown's Cafe</NavDropdown.Item>
+        <NavDropdown.Item href="brownscafe">Brown's Cafe</NavDropdown.Item>
       </NavDropdown>
     <NavDropdown title="Places" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Nigeria</NavDropdown.Item>

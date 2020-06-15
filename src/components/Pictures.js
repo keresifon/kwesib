@@ -8,10 +8,11 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 
 
-const Slide = () => {
+const Pictures = (props) => {
+    console.log(props)
   const data = useStaticQuery(graphql`
     query {
-  allCloudinaryMedia(filter: {tags: {eq: "sherds"}}) {
+  allCloudinaryMedia {
     edges {
       node {
         secure_url
@@ -33,7 +34,7 @@ const Slide = () => {
   >
     {data.allCloudinaryMedia.edges.map(edge => {
           return (
-    <div data-src={edge.node.secure_url} />
+    <div data-src={edge.node.secure_url} key={edge.node.id}/>
     
     )
   })}
@@ -42,4 +43,4 @@ const Slide = () => {
   )
 }
 
-export default Slide
+export default Pictures
