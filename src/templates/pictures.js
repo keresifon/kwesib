@@ -12,11 +12,10 @@ const AutoplaySlider = withAutoplay(AwesomeSlider)
   
 const Pictures = (props) => {
 
-console.log(props)
+
 
   const {edges} = props.data.allCloudinaryMedia;
-  //let filtered = edges.filter(edge => edge.node.tags === props.pageContext.tags)
- //let filtered = edges.filter(edge => edge.node.tags == url)
+
   
   
 
@@ -30,6 +29,7 @@ console.log(props)
       fillParent={true}
       organicArrows={false}
       bullets={false}
+      buttons={true}
     >
       {edges.map(edge => {
   
