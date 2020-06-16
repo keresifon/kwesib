@@ -1,7 +1,31 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require("path")
 
-// You can delete this file if you're not using it
+module.exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const pixTemplate = path.resolve("./src/templates/pictures.js")
+  const res = await graphql(`
+    query query {
+        allCloudinaryMedia {
+          edges {
+            node {
+              secure_url
+              id
+              tags
+            }
+          }
+        }
+      }
+  `)
+
+
+
+  res.data.allCloudinaryMedia.edges.forEach(edge => {
+    createPage({
+      component: pixTemplate,
+      path: `/${edge.node.tags}`,
+      context: {
+    tags: edge.node.tags,
+      },
+    })
+  })
+}
