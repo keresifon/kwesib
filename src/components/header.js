@@ -14,6 +14,11 @@ const Header = () => (
     
     <NavDropdown title="Places" id="basic-nav-dropdown">
         <NavDropdown.Item as={Link} to="incredibleindia">Incredible India</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="aggrafort">Aggra Fort</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="tagmahal">Taj Mahal</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="zoo">Delhi Zoo</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="redfort">The Red Fort</NavDropdown.Item>
+        <NavDropdown.Divider />
         <NavDropdown.Item as={Link} to="usa">USA</NavDropdown.Item>
         <NavDropdown.Item as={Link} to="#action/3.3">India</NavDropdown.Item>
       </NavDropdown>
