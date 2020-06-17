@@ -39,7 +39,7 @@ module.exports = {
         resourceType: `image`,
         prefix: `kwesiblack/`,
         tags: true ,
-        maxResults: 200
+        maxResults: 1000
       },
     }
   
