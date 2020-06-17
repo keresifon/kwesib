@@ -13,7 +13,7 @@ const Footer = () => {
       <Navbar.Collapse>
       <Nav className="mr-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
-        <Nav.Link as={Link} to="recent">Recent</Nav.Link>
+        {/* <Nav.Link as={Link} to="recent">Recent</Nav.Link> */}
         <Nav.Link as={Link} to="bw">Monochrome</Nav.Link>
         <Nav.Link as={Link} to="cl">Color</Nav.Link>
         
