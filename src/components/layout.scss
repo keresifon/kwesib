@@ -21,127 +21,127 @@ $font-family-sans-serif: "PT Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebu
 
 }
 
-// Dark links against a light background
-.navbar-light {
-  .navbar-brand {
-    color: $navbar-light-brand-color;
+// // Dark links against a light background
+// .navbar-light {
+//   .navbar-brand {
+//     color: $navbar-light-brand-color;
 
-    @include hover-focus() {
-      color: $navbar-light-brand-hover-color;
-    }
-  }
+//     @include hover-focus() {
+//       color: $navbar-light-brand-hover-color;
+//     }
+//   }
 
-  .navbar-nav {
-    .nav-link {
-      color: $navbar-light-color;
+//   .navbar-nav {
+//     .nav-link {
+//       color: $navbar-light-color;
 
-      @include hover-focus() {
-        color: $navbar-light-hover-color;
-      }
+//       @include hover-focus() {
+//         color: $navbar-light-hover-color;
+//       }
 
-      &.disabled {
-        color: $navbar-light-disabled-color;
-      }
-    }
+//       &.disabled {
+//         color: $navbar-light-disabled-color;
+//       }
+//     }
 
-    .show > .nav-link,
-    .active > .nav-link,
-    .nav-link.show,
-    .nav-link.active {
-      color: $navbar-light-active-color;
-    }
-  }
+//     .show > .nav-link,
+//     .active > .nav-link,
+//     .nav-link.show,
+//     .nav-link.active {
+//       color: $navbar-light-active-color;
+//     }
+//   }
 
-  .navbar-toggler {
-    color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
-  }
+//   .navbar-toggler {
+//     color: $navbar-light-color;
+//     border-color: $navbar-light-toggler-border-color;
+//   }
 
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-light-toggler-icon-bg);
-  }
+//   .navbar-toggler-icon {
+//     background-image: escape-svg($navbar-light-toggler-icon-bg);
+//   }
 
-  .navbar-text {
-    color: $navbar-light-color;
-    a {
-      color: $navbar-light-active-color;
+//   .navbar-text {
+//     color: $navbar-light-color;
+//     a {
+//       color: $navbar-light-active-color;
 
-      @include hover-focus() {
-        color: $navbar-light-active-color;
-      }
-    }
-  }
-}
+//       @include hover-focus() {
+//         color: $navbar-light-active-color;
+//       }
+//     }
+//   }
+// }
 
-.dropdown-item {
-  display: block;
-  width: 100%; // For `<button>`s
-  padding: $dropdown-item-padding-y $dropdown-item-padding-x;
-  clear: both;
-  font-weight: $font-weight-normal;
-  color: $dropdown-link-color;
-  text-align: inherit; // For `<button>`s
-  text-decoration: if($link-decoration == none, null, none);
-  white-space: nowrap; // prevent links from randomly breaking onto new lines
-  background-color: transparent; // For `<button>`s
-  border: 0; // For `<button>`s
+// .dropdown-item {
+//   display: block;
+//   width: 100%; // For `<button>`s
+//   padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+//   clear: both;
+//   font-weight: $font-weight-normal;
+//   color: $dropdown-link-color;
+//   text-align: inherit; // For `<button>`s
+//   text-decoration: if($link-decoration == none, null, none);
+//   white-space: nowrap; // prevent links from randomly breaking onto new lines
+//   background-color: transparent; // For `<button>`s
+//   border: 0; // For `<button>`s
 
-  // Prevent dropdown overflow if there's no padding
-  // See https://github.com/twbs/bootstrap/pull/27703
-  @if $dropdown-padding-y == 0 {
-    &:first-child {
-      @include border-top-radius($dropdown-inner-border-radius);
-    }
+//   // Prevent dropdown overflow if there's no padding
+//   // See https://github.com/twbs/bootstrap/pull/27703
+//   @if $dropdown-padding-y == 0 {
+//     &:first-child {
+//       @include border-top-radius($dropdown-inner-border-radius);
+//     }
 
-    &:last-child {
-      @include border-bottom-radius($dropdown-inner-border-radius);
-    }
-  }
+//     &:last-child {
+//       @include border-bottom-radius($dropdown-inner-border-radius);
+//     }
+//   }
 
-  @include hover-focus() {
-    color: $dropdown-link-hover-color;
-    text-decoration: none;
-    @include gradient-bg($dropdown-link-hover-bg);
-  }
+//   @include hover-focus() {
+//     color: $dropdown-link-hover-color;
+//     text-decoration: none;
+//     @include gradient-bg($dropdown-link-hover-bg);
+//   }
 
-  &.active,
-  &:active {
-    color: $dropdown-link-active-color;
-    text-decoration: none;
-    @include gradient-bg($dropdown-link-active-bg);
-  }
+//   &.active,
+//   &:active {
+//     color: $dropdown-link-active-color;
+//     text-decoration: none;
+//     @include gradient-bg($dropdown-link-active-bg);
+//   }
 
-  &.disabled,
-  &:disabled {
-    color: $dropdown-link-disabled-color;
-    pointer-events: none;
-    background-color: transparent;
-    // Remove CSS gradients if they're enabled
-    @if $enable-gradients {
-      background-image: none;
-    }
-  }
-}
+//   &.disabled,
+//   &:disabled {
+//     color: $dropdown-link-disabled-color;
+//     pointer-events: none;
+//     background-color: transparent;
+//     // Remove CSS gradients if they're enabled
+//     @if $enable-gradients {
+//       background-image: none;
+//     }
+//   }
+// }
 
 
-// The dropdown menu
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: $zindex-dropdown;
-  display: none; // none by default, but block on "open" of the menu
-  float: left;
-  min-width: $dropdown-min-width;
-  padding: $dropdown-padding-y 0;
-  margin: $dropdown-spacer 0 0; // override default ul
-  @include font-size($dropdown-font-size);
-  color: $dropdown-color;
-  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
-  list-style: none;
-  background-color: $dropdown-bg;
-  background-clip: padding-box;
-  border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($dropdown-border-radius);
-  @include box-shadow($dropdown-box-shadow);
-}
+// // The dropdown menu
+// .dropdown-menu {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   z-index: $zindex-dropdown;
+//   display: none; // none by default, but block on "open" of the menu
+//   float: left;
+//   min-width: $dropdown-min-width;
+//   padding: $dropdown-padding-y 0;
+//   margin: $dropdown-spacer 0 0; // override default ul
+//   @include font-size($dropdown-font-size);
+//   color: $dropdown-color;
+//   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+//   list-style: none;
+//   background-color: $dropdown-bg;
+//   background-clip: padding-box;
+//   border: $dropdown-border-width solid $dropdown-border-color;
+//   @include border-radius($dropdown-border-radius);
+//   @include box-shadow($dropdown-box-shadow);
+// }
