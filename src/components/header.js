@@ -11,37 +11,13 @@ const Header = () => (
   <Navbar.Collapse>
   <Nav className="mr-auto">
     <Nav.Link as={Link} to="/">Home</Nav.Link>
+    <Nav.Link as={Link} to="recent">Recent</Nav.Link>
     
-    <NavDropdown title="Places" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="incredibleindia">Incredible India</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="aggrafort">Aggra Fort</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="tagmahal">Taj Mahal</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="zoo">Delhi Zoo</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="redfort">The Red Fort</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item as={Link} to="usa">USA</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item as={Link} to="lagos">Lagos</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="uyo">Uyo</NavDropdown.Item>
+    <NavDropdown title="Older" id="basic-nav-dropdown">
+        <NavDropdown.Item as={Link} to="bw">Monochrome</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="cl">Color</NavDropdown.Item>
       </NavDropdown>
-    <NavDropdown title="Events" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="#action/3.1">Halloweein Preview</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.2">Lagos Carnival 2015</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.3">Lagos Carnival 2013</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.3">Lagos Carnival 2012</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.3">Event Mix</NavDropdown.Item>
-      </NavDropdown>
-    <NavDropdown title="People" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="#action/3.1">Close-up</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.2">The Kids</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="lmodels">Little Models</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.3">Just People</NavDropdown.Item>
-      </NavDropdown>
-      <NavDropdown title="Commissioned" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="#action/3.1">Baby, Birthdays, Weddings</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.2">She Reads</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="brownscafe">Brown's Cafe</NavDropdown.Item>
-      </NavDropdown>
+    
   </Nav>
   </Navbar.Collapse>
 </Navbar>
