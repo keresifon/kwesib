@@ -35,7 +35,7 @@ const Pictures = (props) => {
   
    
    
-        return <div data-src={edge.node.secure_url} key={edge.node.id} />
+        return <div data-src={edge.node.secure_url} className = "img-fluid" key={edge.node.id} />
       })}
     </AutoplaySlider>
     <Footer/>

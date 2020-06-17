@@ -6,18 +6,14 @@ import { Nav, Navbar, NavDropdown} from 'react-bootstrap'
 const Header = () => (
   <Navbar  className="navbar navbar-expand-lg  navbar-dark bg-kwesiblack " collapseOnSelect
   expand="lg" fixed="top">
-  <Navbar.Brand as={Link} to="/">Navbar</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/">Kwesiblack</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse>
   <Nav className="mr-auto">
     <Nav.Link as={Link} to="/">Home</Nav.Link>
-    <NavDropdown title="Commissioned" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="#action/3.1">Baby, Birthdays, Weddings</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.2">She Reads</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="brownscafe">Brown's Cafe</NavDropdown.Item>
-      </NavDropdown>
+    
     <NavDropdown title="Places" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="#action/3.1">Nigeria</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="incredibleindia">Incredible India</NavDropdown.Item>
         <NavDropdown.Item as={Link} to="usa">USA</NavDropdown.Item>
         <NavDropdown.Item as={Link} to="#action/3.3">India</NavDropdown.Item>
       </NavDropdown>
@@ -33,6 +29,11 @@ const Header = () => (
         <NavDropdown.Item as={Link} to="#action/3.2">The Kids</NavDropdown.Item>
         <NavDropdown.Item as={Link} to="lmodels">Little Models</NavDropdown.Item>
         <NavDropdown.Item as={Link} to="#action/3.3">Just People</NavDropdown.Item>
+      </NavDropdown>
+      <NavDropdown title="Commissioned" id="basic-nav-dropdown">
+        <NavDropdown.Item as={Link} to="#action/3.1">Baby, Birthdays, Weddings</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="#action/3.2">She Reads</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="brownscafe">Brown's Cafe</NavDropdown.Item>
       </NavDropdown>
   </Nav>
   </Navbar.Collapse>
