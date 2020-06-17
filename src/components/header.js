@@ -12,11 +12,10 @@ const Header = () => (
   <Nav className="mr-auto">
     <Nav.Link as={Link} to="/">Home</Nav.Link>
     <Nav.Link as={Link} to="recent">Recent</Nav.Link>
+    <Nav.Link as={Link} to="bw">Monochrome</Nav.Link>
+    <Nav.Link as={Link} to="cl">Color</Nav.Link>
     
-    <NavDropdown title="Older" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="bw">Monochrome</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="cl">Color</NavDropdown.Item>
-      </NavDropdown>
+    
     
   </Nav>
   </Navbar.Collapse>

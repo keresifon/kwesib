@@ -21,7 +21,7 @@ const Pictures = (props) => {
 
   return (
     <>
-    <Header />
+    {/* <Header /> */}
     <AutoplaySlider
       play={true}
       cancelOnInteraction={false} // should stop playing on user interaction
