@@ -20,7 +20,9 @@ const Header = () => (
         <NavDropdown.Item as={Link} to="redfort">The Red Fort</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item as={Link} to="usa">USA</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="#action/3.3">India</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item as={Link} to="lagos">Lagos</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="uyo">Uyo</NavDropdown.Item>
       </NavDropdown>
     <NavDropdown title="Events" id="basic-nav-dropdown">
         <NavDropdown.Item as={Link} to="#action/3.1">Halloweein Preview</NavDropdown.Item>
