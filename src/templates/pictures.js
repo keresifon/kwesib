@@ -3,8 +3,8 @@ import AwesomeSlider from "react-awesome-slider"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
 import "react-awesome-slider/dist/styles.css"
 import { graphql } from "gatsby"
-import Header from '../components/header'
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 
 const AutoplaySlider = withAutoplay(AwesomeSlider)
@@ -14,7 +14,15 @@ const Pictures = (props) => {
 
 
 
-  const {edges} = props.data.allCloudinaryMedia;
+const {edges} = props.data.allCloudinaryMedia;
+
+let pageColor = '';
+
+if (props.uri === "/cl") 
+pageColor = "Color"
+else if (props.uri === "/bw") 
+pageColor = "Monochrome"
+
 
   
   
@@ -22,14 +30,15 @@ const Pictures = (props) => {
   return (
     <>
     {/* <Header /> */}
+    <Helmet title={pageColor}/>
     <AutoplaySlider
       play={true}
       cancelOnInteraction={false} // should stop playing on user interaction
-      interval={6000}
+      interval={3000}
       fillParent={true}
       organicArrows={false}
       bullets={false}
-      buttons={true}
+      
     >
       {edges.map(edge => {
   
