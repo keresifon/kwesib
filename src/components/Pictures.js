@@ -34,8 +34,9 @@ const Pictures = (props) => {
   >
     {data.allCloudinaryMedia.edges.map(edge => {
           return (
-    <div data-src={edge.node.secure_url} key={edge.node.id}/>
-    
+            <div>
+    <img src={edge.node.secure_url} className="img-fluid w-1005d"  key={edge.node.id}/> 
+    </div>
     )
   })}
   </AutoplaySlider>

@@ -21,6 +21,9 @@ $font-family-sans-serif: "PT Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebu
 
 }
 
+
+
+
 // // Dark links against a light background
 // .navbar-light {
 //   .navbar-brand {
@@ -145,3 +148,10 @@ $font-family-sans-serif: "PT Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebu
 //   @include border-radius($dropdown-border-radius);
 //   @include box-shadow($dropdown-box-shadow);
 // }
+
+html,
+body {
+  height: 100%;
+  background-color: $bg;
+  
+}
